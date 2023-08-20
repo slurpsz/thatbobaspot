@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import image from "../assets/B.png"
 import { FaBars} from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
+import "../index.css"
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
     <div>
       <div className="flex justify-between pr-4">
         <img src={image} alt="logo" style={{ width: 200 }} />
-        <ul className="items-center uppercase hidden md:flex">
+        <ul className="items-center uppercase hidden md:flex cursor-pointer">
           <li className="font-bold p-6">Home</li>
           <li className="font-bold p-6">Menu</li>
           <li className="font-bold p-6">About</li>
@@ -19,7 +20,8 @@ const Navbar = () => {
           <li className="font-bold p-6">Contact</li>
         </ul>
 
-        <div onClick={handleClick} className="flex pt-8 md:hidden">
+        {/* hamburger menu */}
+        <div onClick={handleClick} className="flex pt-8 md:hidden z-10">
           {!nav ? <FaBars /> : <AiOutlineClose />}
         </div>
 
