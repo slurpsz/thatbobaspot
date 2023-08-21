@@ -4,9 +4,11 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      "sage": "#6b7b62",
-      "grass": "#d4d4ce", 
-    }  
+      sage: "#6b7b62",
+      grass: "#d4d4ce",
+      black: "#000000",
+      white: "#FFFFFF",
+    },
   },
   plugins: [],
 };

@@ -10,14 +10,14 @@ const Navbar = () => {
   return (
     <div>
       <div className="flex justify-between pr-4">
-        <img src={image} alt="logo" style={{ width: 200 }} />
-        <ul className="items-center uppercase hidden md:flex cursor-pointer">
-          <li className="font-bold p-6">Home</li>
-          <li className="font-bold p-6">Menu</li>
-          <li className="font-bold p-6">About</li>
-          <li className="font-bold p-6">Locations</li>
-          <li className="font-bold p-6">Careers</li>
-          <li className="font-bold p-6">Contact</li>
+        <img src={image} alt="logo" style={{ width: 150 }} />
+        <ul className="items-center uppercase hidden md:flex cursor-pointer text-sm">
+          <li className="font-bold p-4">Home</li>
+          <li className="font-bold p-4">Menu</li>
+          <li className="font-bold p-4">About</li>
+          <li className="font-bold p-4">Locations</li>
+          <li className="font-bold p-4">Careers</li>
+          <li className="font-bold p-4">Contact</li>
         </ul>
 
         {/* hamburger menu */}
