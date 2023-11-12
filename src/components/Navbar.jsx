@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import image from "../assets/B.png"
-import { FaBars} from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
 import "../index.css"
 
@@ -10,18 +10,21 @@ const Navbar = () => {
   return (
     <div>
       <div className="flex justify-between pr-4">
-          <img src={image} alt="logo" style={{ width: 200 }} />
+        <img src={image} alt="logo" style={{ width: 200 }} />
         <ul className="items-center uppercase hidden md:flex cursor-pointer text-sm">
-          <li className="font-bold p-4">Home</li>
-          <li className="font-bold p-4">Menu</li>
-          <li className="font-bold p-4">About</li>
-          <li className="font-bold p-4">Locations</li>
-          <li className="font-bold p-4">Careers</li>
-          <li className="font-bold p-4">Contact</li>
+          <li className="font-bold p-4 navli">Home</li>
+          <li className="font-bold p-4 navli">Menu</li>
+          <li className="font-bold p-4 navli">About</li>
+          <li className="font-bold p-4 navli">Locations</li>
+          <li className="font-bold p-4 navli">Careers</li>
+          <li className="font-bold p-4 navli">Contact</li>
         </ul>
 
         {/* hamburger menu */}
-        <div onClick={handleClick} className="flex pt-8 md:hidden z-10">
+        <div
+          onClick={handleClick}
+          className="flex pt-8 md:hidden z-10 cursor-pointer"
+        >
           {!nav ? <FaBars /> : <AiOutlineClose />}
         </div>
 
@@ -30,7 +33,7 @@ const Navbar = () => {
           className={
             !nav
               ? "hidden"
-              : "fixed right-8 top-8 h-full border-l border-l-grass"
+              : "md:hidden fixed right-8 top-8 h-full border-l border-l-grass"
           }
         >
           <ul className={!nav ? "hidden" : "p-4 uppercase cursor-pointer"}>

@@ -1,12 +1,14 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import ImageSlider from "./components/ImageSlider";
+import Home from "./components/Home";
+import Menu from "./components/Menu";
+
 
 function App() {
   return (
     <>
-      <Navbar />
-      <ImageSlider />
+      <Home />
+      <Menu />
+
     </>
   );
 }

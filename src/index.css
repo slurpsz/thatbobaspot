@@ -6,7 +6,7 @@
 
 
 @layer {
-  li {
+  .navli {
     @apply relative ml-10 hover:text-sage 
   }
 }
