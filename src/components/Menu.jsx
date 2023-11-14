@@ -5,6 +5,7 @@ const Menu = () => {
   return (
     <div>
       <div>
+        {/* favorites and popular icons */}
         <div className="flex flex-row justify-center">
           <div className="mt-0.5">
             <FaRegStar />
@@ -24,81 +25,92 @@ const Menu = () => {
           </div>
         </div>
       </div>
-      <div className="grid sm:grid-cols-2">
+      {/* menu items */}
+      <div className="grid lg:grid-cols-3 w-full">
         <div>
-
-          <img
-            src="https://d2s742iet3d3t1.cloudfront.net/restaurants/restaurant-50669000000000000/menu/items/6/item-500000002472784706_1588185006.png?size=medium"
-            alt="taro smoothie"
-            className="w-60 ml-48 "
-          />
-          
-        </div>
-        <div className="mt-5">
-          <h2 className="text-2xl pb-10">Blended Goodness</h2>
-          <ul>
-            <li>Strawberry Smoothie</li>
-            <li>Mango Smoothie</li>
-            <div className="flex flex-row">
-              <li>Taro Smoothie</li>
-              <div className="mt-0.5 ml-1">
-                <FaRegStar />
+          <div>
+            <img
+              src="https://i.pinimg.com/564x/f4/22/0f/f4220fbb9cca26df0e605a3b0275c6dd.jpg"
+              alt="mango smoothie"
+              className="ml-48 w-60"
+            />
+          </div>
+          <div className="mt-5 mr-14 text-center">
+            <h2 className="text-2xl pb-10">Blended Goodness</h2>
+            <ul>
+              <li>Strawberry Smoothie</li>
+              <li>Mango Smoothie</li>
+              <div className="flex flex-row justify-center">
+                <li>Taro Smoothie</li>
+                <div className="mt-0.5 ml-1">
+                  <FaRegStar />
+                </div>
               </div>
-            </div>
-            <li>Strawberry Banana Smoothie</li>
-          </ul>
+              <li>Strawberry Banana Smoothie</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://i.pinimg.com/564x/d8/ac/ad/d8acad0a8dfecfb1b9cce096c2aa4bb5.jpg"
+              alt="peach white tea"
+              className="w-60 ml-48"
+            />
+          </div>
+          <div className="mt-5 mr-14 text-center">
+            <h2 className="text-2xl pb-10">Fruit Teas</h2>
+            <ul>
+              <li>Peach Strawberry GT/BT</li>
+              <div className="flex flex-row justify-center">
+                <li>Peach White Tea</li>
+                <div className="mt-0.5 ml-1">
+                  <FaRegStar />
+                </div>
+              </div>
+              <li>Lychee GT/BT</li>
+              <li>Passionfruit GT/BT</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img
+              src="https://i.pinimg.com/564x/b6/4f/ed/b64fed217523388e647a838db03b283f.jpg"
+              alt="milk tea with boba"
+              className="w-60 ml-48"
+            />
+          </div>
+          <div className="mt-5 mr-14 text-center">
+            <h2 className="text-2xl pb-10">Milk Teas</h2>
+            <ul>
+              <li>
+                Signature Milk Tea{" "}
+                <b>
+                  <i>D</i>
+                </b>
+              </li>
+              <li>Jasmine Milk Tea</li>
+              <li>Mango Milk Tea</li>
+              <div className="flex flex-row justify-center">
+                <li>Strawberry Milk Tea</li>
+                <div className="mt-0.5 ml-1">
+                  <FaRegStar />
+                </div>
+              </div>
+            </ul>
+          </div>
         </div>
       </div>
-      <div className="grid grid-cols-2">
-        <div>
-          <img
-            src="https://i.pinimg.com/564x/d8/ac/ad/d8acad0a8dfecfb1b9cce096c2aa4bb5.jpg"
-            alt="peach white tea"
-            className="w-60 py-5 ml-48"
-          />
-        </div>
-        <div>
-          <h2 className="text-2xl pb-10 pt-10">Fruit Teas</h2>
-          <ul>
-            <li>Peach Strawberry GT/BT</li>
-            <div className="flex flex-row">
-              <li>Peach White Tea</li>
-              <div className="mt-0.5 ml-1">
-                <FaRegStar />
-              </div>
-            </div>
-            <li>Lychee GT/BT</li>
-            <li>Passionfruit GT/BT</li>
-          </ul>
-        </div>
-      </div>
-      <div className="grid grid-cols-2">
-        <div>
-          <img
-            src="https://i.pinimg.com/736x/3b/89/2c/3b892c45b35c1c056c786bb960525511.jpg"
-            alt="milk tea with boba on top"
-            className="w-60 ml-48"
-          />
-        </div>
-        <div>
-          <h2 className="text-2xl pb-10">Milk Teas</h2>
-          <ul>
-            <li>
-              Signature Milk Tea{" "}
-              <b>
-                <i>D</i>
-              </b>
-            </li>
-            <li>Jasmine Milk Tea</li>
-            <li>Mango Milk Tea</li>
-            <div className="flex flex-row">
-              <li>Strawberry Milk Tea</li>
-              <div className="mt-0.5 ml-1">
-                <FaRegStar />
-              </div>
-            </div>
-          </ul>
-        </div>
+      {/* topping items */}
+      <div>
+        <h1 className='text-2xl text-center mt-20'>Toppings</h1>
+        <ul className='text-center mt-10'>
+          <li>Boba</li>
+          <li>Lychee Jelly</li>
+          <li>Crystal Boba</li>
+          <li>Grass Jelly</li>
+        </ul>
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ module.exports = {
       grass: "#d4d4ce",
       black: "#000000",
       white: "#FFFFFF",
+      gray: "rgb(249 250 251)"
     },
   },
   plugins: [],
