@@ -6,7 +6,7 @@ const Menu = () => {
     <div>
       <div>
         {/* favorites and popular icons */}
-        <div className="flex flex-row justify-center">
+        <div className="flex flex-row justify-center pt-4">
           <div className="mt-0.5">
             <FaRegStar />
           </div>
@@ -36,7 +36,7 @@ const Menu = () => {
             />
           </div>
           <div className="mt-5 mr-14 text-center">
-            <h2 className="text-2xl pb-10">Blended Goodness</h2>
+            <h2 className="text-2xl pb-10 text-sage">Blended Goodness</h2>
             <ul>
               <li>Strawberry Smoothie</li>
               <li>Mango Smoothie</li>
@@ -59,7 +59,7 @@ const Menu = () => {
             />
           </div>
           <div className="mt-5 mr-14 text-center">
-            <h2 className="text-2xl pb-10">Fruit Teas</h2>
+            <h2 className="text-2xl pb-10 text-sage">Fruit Teas</h2>
             <ul>
               <li>Peach Strawberry GT/BT</li>
               <div className="flex flex-row justify-center">
@@ -82,7 +82,7 @@ const Menu = () => {
             />
           </div>
           <div className="mt-5 mr-14 text-center">
-            <h2 className="text-2xl pb-10">Milk Teas</h2>
+            <h2 className="text-2xl pb-10 text-sage">Milk Teas</h2>
             <ul>
               <li>
                 Signature Milk Tea{" "}
@@ -104,7 +104,7 @@ const Menu = () => {
       </div>
       {/* topping items */}
       <div>
-        <h1 className='text-2xl text-center mt-20'>Toppings</h1>
+        <h1 className='text-2xl text-center mt-20 text-sage'>Toppings</h1>
         <ul className='text-center mt-10'>
           <li>Boba</li>
           <li>Lychee Jelly</li>
